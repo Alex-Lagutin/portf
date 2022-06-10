@@ -26,7 +26,7 @@
           <span></span>
         </button>
         <nav class="menu">
-          <ul class="menu__list">
+          <ul class="menu__list"><span class="visually-hidden"> Ссылки на пункты меню.</span>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">Обо мне
@@ -102,6 +102,7 @@
                 html
               </span>
               <div class="skill__bar">
+                <span class="visually-hidden">навыки в HTML = 85%</span>
                 <span style="width: 85%;">
                 </span>
               </div>
@@ -112,6 +113,7 @@
                 css
               </span>
               <div class="skill__bar">
+                <span class="visually-hidden">навыки в CSS = 80% </span>
                 <span style="width: 80%;">
                 </span>
               </div>
@@ -122,6 +124,7 @@
                 js
               </span>
               <div class="skill__bar">
+                <span class="visually-hidden">навыки в Java Script = 61% </span>
                 <span style="width: 61%;">
                 </span>
               </div>
@@ -228,14 +231,17 @@
         <div class="reviews__inner">
 
           <div class="reviews__client">
-            <img class="reviews__user" src="./images/user.jpg" alt="Пользователь">
+            <img class="reviews__user" src="./images/user.jpg" alt="Фото пользователя">
+
             <h4 class="reviews__name">Марк Цукерберг</h4>
             <blockquote>Фантастика! Я всецело доволен
               работой этого специалиста.
               Быстро и качественно. Рекомендую!</blockquote>
           </div>
 
-          <a class="reviews__popup-play" data-fancybox href="https://www.youtube.com/watch?v=h24OJyvD7YU">
+          <a class="reviews__popup-play" data-fancybox href="https://www.youtube.com/watch?v=h24OJyvD7YU"
+            style="background-image:url('./images/video-bg.jpg')">
+            <span class="visually-hidden"> Ссылки на видео-отзыв пользорвателя</span>
             <img class="reviews__popup-btn" src="./images/play-button.svg" alt="Запуск">
             <div class="overlay"></div>
           </a>
@@ -286,39 +292,41 @@
             <div class="contacts__social">
               <ul class="social__list">
                 <li class="social__item ">
-                  <a class="social__link social__link--instagramm" href="#">
+                  <a class="social__link social__link--instagramm" href="#"><span class="visually-hidden"> Ссылки на
+                      станицу в Инстаграмм</span>
                   </a>
                 </li>
                 <li class="social__item ">
-                  <a class="social__link social__link--facebook" href="#">
+                  <a class="social__link social__link--facebook" href="#"><span class="visually-hidden"> Ссылки на
+                      страницу Фейсбук .</span>
                   </a>
                 </li>
                 <li class="social__item ">
-                  <a class="social__link social__link--telegram" href="#">
+                  <a class="social__link social__link--telegram" href="#"><span class="visually-hidden"> Ссылки на
+                      страницу Телеграм .</span>
                   </a>
                 </li>
               </ul>
             </div>
-
           </div>
+
           <div class="contacts__item">
             <form class="form">
               <div class="form-line">
                 <label class="form__name">Ваше имя
-                  <input class="form-input" type="text" name="fname" required="required" placeholder="Иван">
+                  <input class="form-input" type="text" name="text" required="required" placeholder="Иван">
                 </label>
                 <label class="form__name">Номер телефона
-                  <input class="form-input" type="tel" name="fname" required="required" placeholder="+380501111111">
+                  <input class="form-input" type="tel" name="tel" required="required" placeholder="+380501111111">
                 </label>
               </div>
               <label class="form__textarea ">Ваше сообщение
-                <textarea class="textarea" name="fname" placeholder="Текст вашего сообщения">
+                <textarea class="textarea" name="message" placeholder="Текст вашего сообщения">
                 </textarea>
               </label>
               <button class="button contacts__form-btn" type="submit">Отправить</button>
             </form>
           </div>
-
         </div>
       </div>
     </section>
@@ -328,7 +336,7 @@
     <a class="logo logo__footer" href="#">
       <img class="logo__img" src="./images/logo.svg" alt="Мой логотип">
     </a>
-  </footer>
+  </footer> -->
 
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/mixitup.min.js"></script>
