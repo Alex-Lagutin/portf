@@ -15,62 +15,65 @@
   <title>Портфолио Ивана Иванова | Главная страница</title>
 </head>
 
-<body>
-  <header class="header" style="background-image:url(./images/header-bg.jpg)">
+<body id="top">
+  <header class="header">
     <div class="container">
       <div class="header__top">
-        <a class="logo" href="#">
+        <a class="logo" href="#top">
           <img class="logo__img" src="./images/logo.svg" alt="Мой логотип">
         </a>
         <button class="menu__btn">
           <span></span>
+          <span class="visually-hidden">Мобильное меню</span>
         </button>
         <nav class="menu">
           <ul class="menu__list"><span class="visually-hidden"> Ссылки на пункты меню.</span>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Обо мне
+              <a class="menu__link" href="#about">Обо мне
               </a>
             <li class="menu__item">
-              <a class="menu__link" href="#">Навыки
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#">Услуги
+              <a class="menu__link" href="#skills">Навыки
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Портфолио
+              <a class="menu__link" href="#services">Услуги
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Отзывы
+              <a class="menu__link" href="#portfolio">Портфолио
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Контакты
+              <a class="menu__link" href="#reviews">Отзывы
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#contact">Контакты
               </a>
             </li>
           </ul>
         </nav>
       </div>
-
+    </div>
+  </header>
+  <div class="home__content" style="background-image:url(./images/header-bg.jpg)">
+    <div class="container">
       <div class="header__text">
         <h1 class="header__title">Привет, я Иван Иванов
           <span> frontend-разработчик</span>
         </h1>
       </div>
 
-      <a class="header__arrow" href="#">
+      <a class="header__arrow" href="#portfolio">
         смотреть работы
       </a>
+    </div>
+  </div>
 
-    </div>
-    </div>
-  </header>
 
   <main class="main">
-    <section class="about">
+    <section id="about" class="about">
       <div class="container">
 
         <h2 class="title"> Обо мне</h2>
@@ -89,7 +92,7 @@
       </div>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="skills">
       <div class="container">
         <h2 class="title">Навыки</h2>
 
@@ -135,7 +138,7 @@
       </div>
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
       <div class="container">
         <h2 class="title">Услуги</h2>
         <ul class="services__list">
@@ -160,7 +163,7 @@
       </div>
     </section>
 
-    <section class="section portfolio ">
+    <section id="portfolio" class="section portfolio ">
       <div class="container">
         <h2 class="title section">Мои работы</h2>
 
@@ -225,23 +228,24 @@
       </div>
     </section>
 
-    <section class="reviews ">
+    <section id="reviews" class="reviews ">
       <div class="container">
-        <div class="title reviews__title ">Отзывы клиентов</div>
+        <h2 class="title reviews__title ">Отзывы клиентов</h2>
         <div class="reviews__inner">
 
           <div class="reviews__client">
             <img class="reviews__user" src="./images/user.jpg" alt="Фото пользователя">
 
-            <h4 class="reviews__name">Марк Цукерберг</h4>
-            <blockquote>Фантастика! Я всецело доволен
-              работой этого специалиста.
-              Быстро и качественно. Рекомендую!</blockquote>
+            <blockquote class="blockquote">
+              <span class="reviews__name">Марк Цукерберг</span>
+              <p>Фантастика! Я всецело доволен
+                работой этого специалиста.
+                Быстро и качественно. Рекомендую!</p>
+            </blockquote>
           </div>
-
           <a class="reviews__popup-play" data-fancybox href="https://www.youtube.com/watch?v=h24OJyvD7YU"
             style="background-image:url('./images/video-bg.jpg')">
-            <span class="visually-hidden"> Ссылки на видео-отзыв пользорвателя</span>
+            <span class="visually-hidden"> Открыть видео-отзыв пользорвателя</span>
             <img class="reviews__popup-btn" src="./images/play-button.svg" alt="Запуск">
             <div class="overlay"></div>
           </a>
@@ -275,7 +279,7 @@
       </div>
     </section>
 
-    <section class="contact section__mob">
+    <section id="contact" class="contact section__mob">
       <div class="container">
         <h2 class="title  ">Контакты</h2>
         <div class="contacts__inner">
@@ -292,18 +296,18 @@
             <div class="contacts__social">
               <ul class="social__list">
                 <li class="social__item ">
-                  <a class="social__link social__link--instagramm" href="#"><span class="visually-hidden"> Ссылки на
-                      станицу в Инстаграмм</span>
+                  <a class="social__link social__link--instagramm" href="#"><span class="visually-hidden"> Перейти на
+                      мою станицу в Инстаграмм</span>
                   </a>
                 </li>
                 <li class="social__item ">
-                  <a class="social__link social__link--facebook" href="#"><span class="visually-hidden"> Ссылки на
+                  <a class="social__link social__link--facebook" href="#"><span class="visually-hidden"> Перейти на мою
                       страницу Фейсбук .</span>
                   </a>
                 </li>
                 <li class="social__item ">
-                  <a class="social__link social__link--telegram" href="#"><span class="visually-hidden"> Ссылки на
-                      страницу Телеграм .</span>
+                  <a class="social__link social__link--telegram" href="#"><span class="visually-hidden"> Написать мне в
+                      Телеграм .</span>
                   </a>
                 </li>
               </ul>
@@ -336,7 +340,7 @@
     <a class="logo logo__footer" href="#">
       <img class="logo__img" src="./images/logo.svg" alt="Мой логотип">
     </a>
-  </footer> -->
+  </footer>
 
   <script src="js/jquery-3.6.0.min.js"></script>
   <script src="js/mixitup.min.js"></script>
